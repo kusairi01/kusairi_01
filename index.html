@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pembayaran Parkir</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>aplikasi Pembayaran parkir sederhana</h2>
+        <form id="formParkir">
+            <label for="nomorKendaraan">Nomor Kendaraan:</label>
+            <input type="text" id="nomorKendaraan" name="nomorKendaraan" placeholder="Masukkan nomor kendaraan" required>
+
+            <label for="jumlahJam">Jumlah Jam Parkir:</label>
+            <input type="number" id="jumlahJam" name="jumlahJam" placeholder="Masukkan jumlah jam" min="1" required>
+
+            <label for="tarifParkir">Tarif Parkir per Jam:</label>
+            <input type="number" id="tarifParkir" name="tarifParkir" placeholder="Masukkan tarif per jam" min="1" value="2000" required>
+
+            <input type="submit" value="Bayar">
+        </form>
+        <div id="hasil"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
